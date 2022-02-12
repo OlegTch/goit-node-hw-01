@@ -4,7 +4,8 @@ const {
   addContact,
   getContactById,
   removeContact,
-} = require("./contacts");
+} = require("./contactsOperation");
+//  require("./contacts");
 
 const program = new Command();
 program
