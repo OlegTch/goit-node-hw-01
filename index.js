@@ -4,7 +4,7 @@ const {
   addContact,
   getContactById,
   removeContact,
-} = require("./contactsOperation");
+} = require("./controllers");
 //  require("./contacts");
 
 const program = new Command();
@@ -56,4 +56,4 @@ async function invokeAction({ action, id, name, email, phone }) {
   }
 }
 
-invokeAction(argv);
+invokeAction(argv).then().catch();
